@@ -1,0 +1,156 @@
+/* CSS Styles */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f3ef; /* Light beige background */
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #4a4e69; /* Dark slate blue */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header button {
+    background-color: #6d6875; /* Muted purple */
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #b5838d; /* Hover to a different tone */
+}
+
+/* Main Content Styles */
+main {
+    padding: 2em;
+}
+
+.task-form,
+.task-list {
+    margin-bottom: 2em;
+}
+
+.task-form label,
+.task-form input,
+.task-form textarea,
+.task-form select,
+.task-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.task-form button,
+.task-list button {
+    background-color: #6d6875; /* Muted purple */
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-form button:hover,
+.task-list button:hover {
+    background-color: #b5838d; /* Hover to a different tone */
+}
+
+/* Active button style */
+.task-list button.active {
+    background-color: #b5838d; /* Pink color */
+}
+
+/* Task List Styles */
+.task-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    border: 1px solid #ddd;
+    margin-bottom: 1em;
+    padding: 1em;
+    position: relative;
+    background-color: #fff; /* White background for contrast */
+    border-radius: 4px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.task-list li:hover {
+    background-color: #e8e8e8; /* Slightly darker on hover */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-list .completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-list button.edit {
+    background-color: #ffb84d; /* Earthy orange */
+}
+
+.task-list button.edit:hover {
+    background-color: #ffcc80; /* Lighter orange on hover */
+}
+
+.task-list button.delete {
+    background-color: #c94c4c; /* Earthy red */
+}
+
+.task-list button.delete:hover {
+    background-color: #e57373; /* Lighter red on hover */
+}
+
+/* Navigation Styles */
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #b5838d; /* Hover background color */
+    color: #fff; /* Hover text color */
+}
+
+/* Active Navigation Item Styles */
+nav ul li.active {
+    background-color: #6d6875; /* Active background color */
+	color: #fff;
+}

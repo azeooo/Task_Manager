@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f3ef; /* Light beige background */
+            color: #333;
+        }
+
+        header {
+            background-color: #4a4e69; /* Dark slate blue */
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header button {
+            background-color: #6d6875; /* Muted purple */
+            color: #fff;
+            border: none;
+            padding: 0.5em 1em;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            right: 1em; /* Align button to the right */
+            transform: translateY(-50%); /* Vertically center the button */
+            transition: background-color 0.3s;
+        }
+
+        header button:hover {
+            background-color: #b5838d; /* Hover to a different tone */
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        section {
+            background-color: #fff; /* White background for contrast */
+            padding: 2em;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #4a4e69; /* Dark slate blue */
+        }
+
+        section p {
+            margin-bottom: 1em;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .social-icon {
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Task Manager</h1>
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='logout.html'">Logout</button>
+    </header>
+
+    <main>
+        <section>
+            <h2>About This Application</h2>
+            <p>Library Task Manager is a simple yet powerful task management application designed to help you organize and prioritize your tasks effectively.</p>
+            <h2>Developers</h2>
+            <p>Developed by Haidah Athirah, Azenurain, Nurul Izzatty, Husna Afiqah</p>
+            <p>&copy; 2024 Library Task Manager</p>
+            <a href="https://www.instagram.com/izzattysuaidi?igsh=MTNoNG02Z3FqOWc4bw%3D%3D&utm_source=qr" target="_blank">
+                <img src="ig_icon.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/izzatty-suaidi-a15460218?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                <img src="linkedin_icon.png" alt="LinkedIn" class="social-icon">
+            </a>
+			 <p><a href="https://azeooo.github.io/Task_Manager/login.html" target="_blank">Visit the Application's Website</a></p>
+        </section>
+    </main>
+</body>
+</html>

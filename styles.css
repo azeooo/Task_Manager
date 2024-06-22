@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #f4f3ef; /* Light beige background */
+    color: #333;
+    position: relative;
+	font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #00563B; /* Dark slate green */
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Ensure main section covers full viewport height */
+}
+
+section.login-form {
+    background-color: #fff; /* White background for contrast */
+    padding: 3em; /* Increase padding for more space */
+    border-radius: 8px; /* Increase border radius */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Set a max width for larger forms */
+    box-sizing: border-box;
+}
+
+section.login-form h2 {
+    color: #00563B; /* Dark slate blue */
+    text-align: center; /* Center align heading */
+}
+
+section.login-form label,
+section.login-form input,
+section.login-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.95em; /* Increase margin between elements */
+    font-size: 1.0em; /* Increase font size */
+}
+
+section.login-form input,
+section.login-form button {
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-bottom: 15px;	
+}
+
+section.login-form button {
+	margin-top: 0.2em;
+	 margin-bottom: 0.2em;
+    background-color: #8FBC8B; /* Dark slate blue */
+    color: #fff;
+    border: none;
+    padding: 0.75em; /* Increase padding */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.2em; /* Increase font size */
+	border-radius: 4px; /* Rounded corners for buttons */
+}
+
+section.login-form button:hover {
+    background-color: #b5838d; /* Hover to a different tone */
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5em; /* Increase margin between input groups */
+}
+
+.icon-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    color: #ccc; /* Change icon color as needed */
+    height: 100%; /* Ensure the icon container covers the full height of the input box */
+}
+
+.icon-container.left {
+    left: 10px; /* Adjust the left spacing as needed */
+    top: 50%;
+	transform: translateY(-58px);
+}
+
+.icon-container.right {
+    right: 10px; /* Adjust the right spacing as needed */
+    top: 50%;
+    transform: translateY(-50%);
+	transform: translateX(-10px);
+	transform: translateY(-58px);
+}
+
+.icon-container i {
+    margin-left: 5px; /* Adjust the spacing between icons */
+}
+
+/* Error styling for input boxes */
+.input-group input.error {
+    border: 2px solid red;
+}
+
+.icon-container i.error {
+    color: red !important;
+}
+
+.error-message {
+    display: none; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffcccc; /* Light red background */
+    color: #ff0000; /* Red text color */
+    padding: 0.5em;
+    border: 1px solid #ff0000; /* Red border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 0.9em;
+}
+
+.star {
+    position: absolute;
+    width: 5px; /* Increased size for better visibility */
+    height: 15px; /* Increased length for meteor effect */
+    background-color: #fff;
+    opacity: 0.8;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.8); /* Glow effect */
+    animation: move 5s linear infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(-10vh) translateX(-10vw) rotate(45deg);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100vh) translateX(100vw) rotate(45deg);
+        opacity: 0;
+    }
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5em; /* Adjust spacing as needed */
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px; /* Adjust spacing between checkbox and label */
+    transform: translate(-80px, -30px); 
+}
+
+.checkbox-container label {
+    margin-right: 50px;
+	transform: translate(-160px, -28px);;
+}
+
+.pass-link {
+	margin-bottom: 0.5em;
+	transform: translateY(-65px);
+}
+
+.pass-link a {
+    text-decoration: none;
+    color: #4a4e69; /* Dark slate blue */
+    transition: color 0.3s;
+}
+
+.pass-link a:hover {
+    color: #b5838d; /* Change color on hover */
+}
+
+.input-group input {
+    padding-left: 40px; /* Ensure the input text doesn't overlap with the left icons */
+    padding-right: 100px; /* Ensure the input text doesn't overlap with the right icons */
+    width: 100%;
+    box-sizing: border-box; /* Include padding in input width calculation */
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<style>
+        .register-link {
+            display: block;
+            margin-top: 1em;
+            text-align: center;
+        }
+	body {
+	background-image: url('bg1.jpg');
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Task Manager</h1>
+    </header>
+
+    <main>
+        <section class="login-form">
+            <h2>Login</h2>
+            <form id="loginForm" novalidate>
+				<div class="input-group">
+					<div class="icon-container left">
+						<i class="fas fa-user"></i>
+					</div>
+					<input type="text" id="username" name="username" placeholder="Username">
+					<div class="icon-container right">
+						<i class="fas fa-exclamation-circle" id="usernameIcon"></i>
+					</div>
+				</div>
+				<div class="input-group">
+					<div class="icon-container left">
+						<i class="fas fa-lock"></i>
+					</div>
+						<input type="password" id="password" name="password" placeholder="Password">
+						<div class="icon-container right">
+							<i class="fas fa-eye-slash" id="togglePassword"></i>
+							<i class="fas fa-exclamation-circle" id="passwordIcon"></i>
+					</div>
+				</div>	
+				<div class="checkbox-container">
+						<input type="checkbox" id="rememberMe" name="rememberMe">
+						<label for="rememberMe">Remember me</label>
+				</div>
+					
+				<div class="pass-link"><a href="forgotPassword.html">Forgot password?</a></div>
+				
+				<button onclick="index.html">Login</button>
+
+            </form>
+        </section>
+    </main>
+    <script src="scriptlogin.js" defer></script>	
+</body>
+</html>
